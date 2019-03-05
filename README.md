@@ -7,13 +7,13 @@ Add to your WORKSPACE
 ```
 http_archive(
     name = "com_github_cschuet_bigquery",
-    strip_prefix = "bigquery-e95c88a65c07288c89739df0bdcf39d993ad5b07",
+    strip_prefix = "bigquery-<SHA>",
     urls = [
-        "https://github.com/cschuet/bigquery/archive/e95c88a65c07288c89739df0bdcf39d993ad5b07.tar.gz",
+        "https://github.com/cschuet/bigquery/archive/<SHA>.tar.gz",
     ],
 )
 
-load("//:bazel/repositories.bzl", "repositories")
+load("@com_github_cschuet_bigquery//:bazel/repositories.bzl", "repositories")
 
 repositories()
 
