@@ -38,10 +38,27 @@ def repositories():
     
     _maybe(
         http_archive,
-        name = "com_github_google_google_api_cpp_client",
-	build_file = "@com_github_cschuet_google_api_cpp_client//bazel/third_party/google-api-cpp-client:google-api-cpp-client.BUILD",
+        name = "com_github_google_benchmark",
+        strip_prefix = "benchmark-d205ead299c7cddd5e1bc3478d57ad4320a4a53c",
+        urls = [
+            "https://github.com/google/benchmark/archive/d205ead299c7cddd5e1bc3478d57ad4320a4a53c.tar.gz",
+        ],
+    )
+
+    _maybe(
+        http_archive,
+        name = "com_github_abseil_abseil_cpp",
+        strip_prefix = "abseil-cpp-419f3184f8ebcdb23105295eadd2a569f3351eb9",
+        urls = [
+            "https://github.com/abseil/abseil-cpp/archive/419f3184f8ebcdb23105295eadd2a569f3351eb9.tar.gz",
+        ],
+    )
+    
+    _maybe(
+        http_archive,
+        name = "com_github_cschuet_google_api_cpp_client",
         strip_prefix = "google-api-cpp-client-10f3b4342378fc5af4cb2b1933bdf27de3bf0c63",
         urls = [
-            "https://github.com/google/google-api-cpp-client/archive/10f3b4342378fc5af4cb2b1933bdf27de3bf0c63.tar.gz",
+            "https://github.com/cschuet/google-api-cpp-client/archive/10f3b4342378fc5af4cb2b1933bdf27de3bf0c63.tar.gz",
         ],
     )
