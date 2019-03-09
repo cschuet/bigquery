@@ -1,4 +1,4 @@
-# Bazel Build for [BiqQuery C++ Client Libraries](http://google.github.io/google-api-cpp-client/latest/available_service_apis.html)
+# Bazel Build for [BigQuery C++ Client Libraries](http://google.github.io/google-api-cpp-client/latest/available_service_apis.html)
 
 [![Build Status](https://travis-ci.org/cschuet/bigquery.svg?branch=master)](https://travis-ci.org/cschuet/bigquery)
 
