@@ -101,21 +101,6 @@ void BigQuerySample::Run() {
   for (auto dataset : dataset_list.get_datasets()) {
 	  std::cout << dataset << std::endl;
   }
-
-/*
-  google_storage_api::BucketsResource_ListMethod request(
-      storage_.get(), &credential_, flow_->project_id());
-  Json::Value value;
-  google_storage_api::Buckets buckets(&value);
-
-  auto status = request.ExecuteAndParseResponse(&buckets);
-  if (!status.ok()) {
-    std::cout << "Could not list buckets: " << status.error_message()
-              << std::endl;
-  }
-  for (auto bucket: buckets.get_items()) {
-    std::cout << bucket.get_self_link() << std::endl;
-  }*/
 }
 
 }  // namespace googleapis
