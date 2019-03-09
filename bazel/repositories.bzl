@@ -53,12 +53,14 @@ def repositories():
             "https://github.com/abseil/abseil-cpp/archive/419f3184f8ebcdb23105295eadd2a569f3351eb9.tar.gz",
         ],
     )
-    
+
+   
     _maybe(
         http_archive,
         name = "com_github_cschuet_google_api_cpp_client",
-        strip_prefix = "google-api-cpp-client-10f3b4342378fc5af4cb2b1933bdf27de3bf0c63",
+        strip_prefix = "google-api-cpp-client-e94aef1cc705bd845b684a99c3b857c758beefc7",
         urls = [
-            "https://github.com/cschuet/google-api-cpp-client/archive/10f3b4342378fc5af4cb2b1933bdf27de3bf0c63.tar.gz",
+            "https://github.com/cschuet/google-api-cpp-client/archive/e94aef1cc705bd845b684a99c3b857c758beefc7.tar.gz",
         ],
     )
+
